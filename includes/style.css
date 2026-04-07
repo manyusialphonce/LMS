@@ -1,0 +1,742 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1f6de0;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1f6de0;
+    box-shadow: 0 0 5px rgba(31,109,224,0.5);
+}
+
+button {
+    background-color: #1f6de0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #155ab6;
+}
+
+a {
+    color: #1f6de0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p.message {
+    background: #f0f4ff;
+    border-left: 5px solid #1f6de0;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+/* Additional: dashboard specific */
+.dashboard-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dashboard-container h2 {
+    color: #1f6de0;
+    text-align: center;
+}
+
+.dashboard-container a.button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #1f6de0;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-container a.button:hover {
+    background: #155ab6;
+}
+
+
+/* =========================
+   TABLE STYLE (NEW)
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #f0f4ff;
+    color: #1f6de0;
+}
+
+
+/* =========================
+   ACTION BUTTONS (NEW)
+========================= */
+.btn-add {
+    background: #28a745;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.btn-add:hover {
+    background: #1e7e34;
+}
+
+.btn-view {
+    background: #17a2b8;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.btn-view:hover {
+    background: #117a8b;
+}
+
+.btn-publish {
+    background: #007bff;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-unpublish {
+    background: #dc3545;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+
+/* =========================
+   STATUS BADGE (BONUS 🔥)
+========================= */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.badge-published {
+    background: #d4edda;
+    color: #155724;
+}
+
+.badge-unpublished {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+
+
+
+
+/* =======================
+   ASSIGNMENTS UI
+======================= */
+
+.page-title{
+    text-align:center;
+    font-size:30px;
+    margin:20px 0;
+    color:#1f6de0;
+}
+
+.assignment-card{
+    background:#fff;
+    padding:20px;
+    margin:20px auto;
+    max-width:750px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.assignment-card:hover{
+    transform:translateY(-5px);
+}
+
+.assignment-title{
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.assignment-desc{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.deadline{
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+.btn-download{
+    background:#28a745;
+    color:#fff;
+}
+
+.btn-submit{
+    background:#1f6de0;
+    color:#fff;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
+.form-control{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.status-success{
+    color:green;
+    font-weight:bold;
+}
+
+.status-expired{
+    color:red;
+    font-weight:bold;
+}
+
+
+
+
+/* ====== Assignments Page ====== */
+h2.page-title {
+    text-align: center;
+    color: #1f6de0;
+    margin-bottom: 30px;
+}
+
+.assignment-card {
+    max-width: 700px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+.assignment-card:hover {
+    transform: translateY(-5px);
+}
+.assignment-card h3 {
+    margin-top: 0;
+    color: #1f6de0;
+}
+.assignment-card p {
+    margin: 5px 0;
+}
+.btn-download, button {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #1f6de0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+.btn-download:hover, button:hover {
+    background: #155bb5;
+}
+form input[type="text"], form input[type="file"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+hr {
+    margin: 15px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.no-assignment {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    color: #555;
+}
+.status-submitted { color: green; font-weight: bold; }
+.status-waiting { color: orange; font-weight: bold; }
+.status-passed { color: red; font-weight: bold; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+/* GRID */
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+    margin-top:20px;
+}
+
+/* CARD */
+.dash-card{
+    position:relative;
+    display:block;
+    background: #1f6de0;
+    padding:20px;
+    border-radius:12px;
+    text-decoration:none;
+    color:#1f6de0;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    border-top:4px solid #1f6de0;
+    transition:0.3s;
+}
+
+.dash-card:hover{
+    transform:translateY(-5px);
+}
+
+/* TITLE */
+.dash-card h3{
+    margin:0;
+    font-size:18px;
+}
+
+/* BADGE */
+.notif-badge{
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:#dc3545;
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+    padding:5px 8px;
+    border-radius:50%;
+    min-width:22px;
+    text-align:center;
+}
+
+
+
+audio{width:100%;}
+
+
+/* ===== PAGE TITLE ===== */
+.page-title{
+    text-align:center;
+    color:#1f6de0;
+    margin-bottom:30px;
+}
+
+
+/* ===== INPUT ===== */
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+/* ===== STATUS ===== */
+.success{color:green;font-weight:bold;}
+.warning{color:orange;font-weight:bold;}
+.danger{color:red;font-weight:bold;}
+
+/* ===== EMPTY STATE ===== */
+.empty{
+    text-align:center;
+    padding:40px;
+    background:#fff;
+    border-radius:12px;
+    margin-top:50px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    color:#555;
+    font-size:18px;
+}
+
+
+/* Chat bubbles */
+.user-msg{
+    text-align:right;
+    background:#e3f2fd;
+    padding:10px;
+    border-radius:10px;
+    margin:5px 0;
+}
+
+.ai-msg{
+    text-align:center;
+    background:#f1f1f1;
+    padding:10px;
+    border-radius:10px;
+    margin:5px 0;
+}
+
+/* Smooth scroll */
+
+
+
+.menu-item{
+    display:block;
+    padding:10px;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    margin-bottom:5px;
+}
+
+.menu-item:hover{
+    background:#57606f;
+}
+
+.menu-group{
+    margin-bottom:10px;
+}
+
+.menu-title{
+    padding:10px;
+    cursor:pointer;
+    background:#3742fa;
+    border-radius:6px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.submenu{
+    display:none;
+    padding-left:10px;
+}
+
+.submenu a{
+    display:block;
+    padding:8px;
+    color:#ddd;
+    text-decoration:none;
+    position:relative;
+}
+
+.submenu a:hover{
+    background:#57606f;
+    border-radius:5px;
+}
+
+/* NOTIFICATION BADGE */
+.notif-badge{
+    background:red;
+    color:#fff;
+    border-radius:50%;
+    padding:3px 7px;
+    font-size:12px;
+    position:absolute;
+    right:10px;
+}
+
+/* ACTIVE */
+.menu-group.active .submenu{
+    display:block;
+}
+
+.arrow{
+    transition:0.3s;
+}
+
+.menu-group.active .arrow{
+    transform:rotate(90deg);
+}
+
+
+.card{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin: 25px 0;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+.welcome{
+    background:linear-gradient(135deg,#7dc94a,#4facfe);
+    color:#fff;
+}
+
+.notice{
+    border-left:5px solid orange;
+}
+
+.card ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+    display: inline-block;
+}
+.card li{
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card h3{
+    margin-bottom: 10px;
+}
+
+
+.profile-box{
+    cursor:pointer;
+   
+    font-weight:bold;
+}
+
+.profile-dropdown{
+    position:absolute;
+    top:60px;
+    right:20px;
+    width:180px;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    display:none;
+}
+
+.profile-dropdown a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:#333;
+}
+
+.profile-dropdown a:hover{
+    background:#f4f6f9;
+}
+
+.dark-btn{
+    margin-left:15px;
+    padding:5px 10px;
+    border:none;
+    background:#1f6de0;
+    color:#fff;
+    border-radius:6px;
+    cursor:pointer;
+   
+    width: auto;
+    display: inline-block;
+}
+
+/* DARK MODE */
+body.dark{
+    background:#1e272e;
+    color:#f1f2f6;
+}
+
+body.dark .card{
+    background:#2f3542;
+    color:#fff;
+}
+
+body.dark .sidebar{
+    background:#1e272e;
+}
+
+body.dark .topbar{
+    background:#2f3542;
+    color:#fff;
+}
+
+
+.profile-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.profile-view{
+    width:300px;
+    text-align:center;
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+.profile-form{
+    flex:1;
+}
+
+.profile-form input,
+.profile-form textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.profile-form button{
+    padding:10px;
+    background:#1f6de0;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.success{
+    background:#d4edda;
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+    color:#155724;
+}
+
+.error{
+    background:#f8d7da;
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+    color:#721c24;
+}
+
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#2f3542;
+    color:#fff;
+    position:fixed;
+    padding:15px;
+    overflow-y:auto;
+}
+
+
+
+/* HEADER FULL WIDTH */
+.header {
+    position: fixed; /* stays on top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* LEFT SIDE LMS NAME */
+.header-left h2 {
+    margin: 0;
+    color: #1f6de0;
+}
+
+/* RIGHT SIDE ELEMENTS */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+
